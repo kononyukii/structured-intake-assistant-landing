@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structured Intake Assistant</title>
+    <meta
+      name="description"
+      content="Structured intake for primary care that helps patients prepare a clear, doctor-friendly summary before a visit."
+    />
+    <meta name="theme-color" content="#0c5b5f" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Structured Intake Assistant home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Structured Intake Assistant</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#how-it-works">How it works</a>
+          <a href="#summary-showcase">Summary</a>
+          <a href="#privacy-safety">Safety</a>
+          <a href="#open-source">Open source</a>
+        </nav>
+
+        <a
+          class="button button-small button-ghost"
+          href="https://github.com/kononyukii/structured-intake-assistant-landing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Structured intake for primary care</p>
+            <h1>Prepare a clear doctor-friendly summary before your visit</h1>
+            <p class="hero-lead">
+              Structured Intake Assistant helps patients organize symptoms,
+              history, and context before an appointment so the handoff to a
+              doctor starts clear instead of fragmented.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button"
+                href="https://github.com/kononyukii/structured-intake-assistant-landing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub
+              </a>
+              <a class="button button-secondary" href="#how-it-works">
+                See how it works
+              </a>
+            </div>
+
+            <ul class="hero-chips" aria-label="Product trust points">
+              <li>Doctor-friendly summary</li>
+              <li>Private by default</li>
+              <li>No diagnosis</li>
+              <li>Optional AI with consent</li>
+            </ul>
+          </div>
+
+          <div
+            class="hero-visual reveal"
+            role="img"
+            aria-label="Mockup showing a guided intake flow beside a doctor-friendly summary preview"
+          >
+            <div class="mockup-shell">
+              <div class="intake-panel">
+                <div class="panel-topline">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span>Before your visit</span>
+                </div>
+                <h2>Guided intake</h2>
+                <p>
+                  Capture what matters while you still have time to think.
+                </p>
+                <div class="intake-group">
+                  <span class="group-label">Visit reason</span>
+                  <div class="input-chip wide">Persistent fatigue and headaches</div>
+                </div>
+                <div class="intake-group">
+                  <span class="group-label">Symptom details</span>
+                  <div class="chip-row">
+                    <span class="input-chip">Started 3 weeks ago</span>
+                    <span class="input-chip">Afternoons worse</span>
+                    <span class="input-chip">Sleep feels unrestful</span>
+                  </div>
+                </div>
+                <div class="intake-group">
+                  <span class="group-label">Relevant history</span>
+                  <div class="chip-row">
+                    <span class="input-chip">Recent move</span>
+                    <span class="input-chip">Higher stress</span>
+                    <span class="input-chip">Iron deficiency in past</span>
+                  </div>
+                </div>
+              </div>
+
+              <article class="summary-card">
+                <div class="summary-header">
+                  <div>
+                    <p class="summary-kicker">Doctor-friendly summary</p>
+                    <h2>Quick clinical review</h2>
+                  </div>
+                  <span class="summary-badge">Ready to print</span>
+                </div>
+
+                <div class="summary-grid">
+                  <section>
+                    <h3>Visit reason</h3>
+                    <p>Fatigue and frequent headaches affecting workdays.</p>
+                  </section>
+                  <section>
+                    <h3>Timeline</h3>
+                    <p>Symptoms present for about three weeks, more noticeable later in the day.</p>
+                  </section>
+                  <section>
+                    <h3>Relevant context</h3>
+                    <p>Recent move, more stress, history of iron deficiency, sleep feels unrefreshing.</p>
+                  </section>
+                  <section>
+                    <h3>Questions to discuss</h3>
+                    <p>What should be reviewed first, and what details matter most for this visit?</p>
+                  </section>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip section">
+        <div class="container">
+          <ul class="trust-items reveal" aria-label="Safety boundaries">
+            <li>Private by default</li>
+            <li>Local-first</li>
+            <li>No diagnosis</li>
+            <li>No treatment recommendations</li>
+            <li>No triage advice</li>
+            <li>Optional AI with explicit consent</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="problem">
+        <div class="container split-section">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Problem</p>
+            <h2>Appointments are short, and stress makes clear explanations harder.</h2>
+            <p>
+              Many people show up knowing something feels wrong, but not with a
+              clean way to explain it. Important details get remembered too late,
+              symptoms come out of order, and context is easy to lose in the
+              moment.
+            </p>
+            <p>
+              Structured Intake Assistant is built for that gap: not to replace a
+              doctor, but to help you arrive prepared.
+            </p>
+          </div>
+
+          <div class="problem-panel reveal">
+            <h3>What often gets lost</h3>
+            <ul class="stack-list">
+              <li>When symptoms started and how they changed</li>
+              <li>Relevant history, medications, or routines</li>
+              <li>Questions you meant to ask during the visit</li>
+              <li>The simple story that ties it all together</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="solution">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Solution</p>
+            <h2>Guided preparation turns scattered notes into a clear handoff.</h2>
+            <p>
+              The product walks through symptoms, history, and context in a
+              structured order, then turns that information into a concise summary
+              designed for quick review before a primary care visit.
+            </p>
+          </div>
+
+          <div class="value-grid">
+            <article class="feature-card reveal">
+              <span class="feature-index">01</span>
+              <h3>Guided intake</h3>
+              <p>Prompts help you capture what brought you in without starting from a blank page.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-index">02</span>
+              <h3>Organized context</h3>
+              <p>Symptoms, timing, history, and questions stay grouped so the story is easier to follow.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-index">03</span>
+              <h3>Doctor-friendly output</h3>
+              <p>A structured summary is easier to scan than a stressed, fragmented explanation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="how-it-works">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How it works</p>
+            <h2>A simple four-step flow before your appointment.</h2>
+            <p>
+              The process is designed to feel finite and manageable, not like a
+              complicated medical form.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number">1</span>
+              <h3>Describe what brings you in</h3>
+              <p>Start with the main concern in plain language.</p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number">2</span>
+              <h3>Add symptom details and relevant history</h3>
+              <p>Capture timing, severity, context, medications, and anything else worth remembering.</p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number">3</span>
+              <h3>Review a structured summary</h3>
+              <p>See the story organized into a format built for quick review.</p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number">4</span>
+              <h3>Print or export it for your visit</h3>
+              <p>Bring a cleaner handoff into the appointment instead of piecing it together under pressure.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="summary-showcase">
+        <div class="container showcase-grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Doctor-friendly summary</p>
+            <h2>The strongest output is the part you bring into the room.</h2>
+            <p>
+              The summary is the core proof of value: a structured, readable
+              snapshot of what is happening, what changed, and what deserves
+              attention during the visit.
+            </p>
+            <ul class="check-list">
+              <li>Visit reason and symptom timeline</li>
+              <li>Relevant history and current context</li>
+              <li>Medications or routines worth noting</li>
+              <li>Questions you want to cover with your doctor</li>
+            </ul>
+          </div>
+
+          <article class="showcase-card reveal">
+            <div class="showcase-header">
+              <div>
+                <p class="summary-kicker">Structured summary</p>
+                <h3>Primary care visit preview</h3>
+              </div>
+              <span class="summary-badge">Doctor-friendly</span>
+            </div>
+
+            <div class="showcase-sections">
+              <section>
+                <h4>Main concern</h4>
+                <p>Fatigue, headaches, and lower concentration over the last three weeks.</p>
+              </section>
+              <section>
+                <h4>Pattern</h4>
+                <p>Symptoms are mild in the morning and more noticeable by afternoon. Rest has not resolved them.</p>
+              </section>
+              <section>
+                <h4>Relevant history</h4>
+                <p>Prior iron deficiency. Higher recent stress after a move. No recent medication changes.</p>
+              </section>
+              <section>
+                <h4>Current context</h4>
+                <p>Sleep feels unrestful. Workdays are harder to get through. Wants to avoid forgetting key details.</p>
+              </section>
+              <section>
+                <h4>Questions for the visit</h4>
+                <p>What details matter most right now, and what should be reviewed first during the appointment?</p>
+              </section>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="privacy-safety">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Privacy &amp; safety</p>
+            <h2>Structured preparation, with clear boundaries.</h2>
+            <p>
+              The product is designed to stay within a narrow, safer scope:
+              helping patients prepare information before a visit, not providing
+              medical judgment.
+            </p>
+          </div>
+
+          <div class="safety-grid">
+            <article class="safety-card reveal">
+              <h3>Private by default</h3>
+              <p>Local-first design keeps the primary workflow focused on your device and your visit.</p>
+            </article>
+
+            <article class="safety-card reveal">
+              <h3>No account required for the local-first flow</h3>
+              <p>The core preparation experience is framed around direct use, not a signup funnel.</p>
+            </article>
+
+            <article class="safety-card reveal">
+              <h3>No diagnosis or treatment recommendations</h3>
+              <p>This stays focused on preparation before a visit, not medical judgment or treatment advice.</p>
+            </article>
+
+            <article class="safety-card reveal">
+              <h3>No triage or urgency advice</h3>
+              <p>The product does not decide how urgent a situation is or what care path to choose.</p>
+            </article>
+
+            <article class="safety-card reveal">
+              <h3>Optional AI only with explicit consent</h3>
+              <p>Any AI assistance is secondary, optional, and never the default assumption.</p>
+            </article>
+
+            <article class="safety-card reveal">
+              <h3>Built for a clearer handoff</h3>
+              <p>The goal is to organize what matters before the appointment so the visit can start more clearly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why-different">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why it feels different</p>
+            <h2>Less scrambling in the room. More structure before you get there.</h2>
+          </div>
+
+          <div class="comparison-grid">
+            <article class="compare-card reveal">
+              <p class="compare-label">Without preparation</p>
+              <ul class="stack-list">
+                <li>Trying to remember everything at once</li>
+                <li>Explaining symptoms out of order</li>
+                <li>Leaving out details that matter</li>
+                <li>Using appointment time to reconstruct the story</li>
+              </ul>
+            </article>
+
+            <article class="compare-card compare-card-positive reveal">
+              <p class="compare-label">With Structured Intake Assistant</p>
+              <ul class="stack-list">
+                <li>Guided prompts before the visit</li>
+                <li>Symptoms, history, and context kept together</li>
+                <li>A doctor-friendly summary ready to review</li>
+                <li>A calmer, clearer starting point for the conversation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="open-source">
+        <div class="container open-source-grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Open source / project status</p>
+            <h2>Early-stage, open-source, and built in public.</h2>
+            <p>
+              This landing page represents a real product direction, not a fake
+              mature platform. The project is in active development, with GitHub
+              as the clearest place to follow progress and review the work.
+            </p>
+          </div>
+
+          <div class="status-panel reveal">
+            <div class="status-row">
+              <span class="status-title">Project stage</span>
+              <span class="status-value">Pre-release foundation</span>
+            </div>
+            <div class="status-row">
+              <span class="status-title">Approach</span>
+              <span class="status-value">Privacy-first, local-first</span>
+            </div>
+            <div class="status-row">
+              <span class="status-title">Source</span>
+              <a
+                class="status-link"
+                href="https://github.com/kononyukii/structured-intake-assistant-landing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+            <div class="status-row">
+              <span class="status-title">Focus</span>
+              <span class="status-value">Doctor-friendly summary before the visit</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" id="final-cta">
+        <div class="container reveal">
+          <div class="cta-panel">
+            <p class="eyebrow">Final CTA</p>
+            <h2>Come to the visit with a clearer story already organized.</h2>
+            <p>
+              Structured Intake Assistant is about better preparation before a
+              primary care visit: a private, local-first way to build a
+              doctor-friendly summary without crossing into diagnosis or
+              treatment advice.
+            </p>
+            <a
+              class="button"
+              href="https://github.com/kononyukii/structured-intake-assistant-landing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Structured Intake Assistant</p>
+        <p>Structured preparation before a primary care visit.</p>
+      </div>
+    </footer>
+  </body>
+</html>
