@@ -44,12 +44,16 @@
       <section class="hero section" id="top">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Structured intake for primary care</p>
-            <h1>Prepare a clear doctor-friendly summary before your visit</h1>
+            <div class="hero-intro">
+              <p class="eyebrow">Structured intake for primary care</p>
+              <p class="hero-status">Private by default / local-first / open source</p>
+            </div>
+            <h1>A clearer handoff before your visit</h1>
             <p class="hero-lead">
-              Structured Intake Assistant helps patients organize symptoms,
-              history, and context before an appointment so the handoff to a
-              doctor starts clear instead of fragmented.
+              Prepare a clear doctor-friendly summary before your visit.
+              Structured Intake Assistant organizes symptoms, history, and
+              context into a concise format a doctor can review quickly.
+              Optional AI stays secondary and requires explicit consent.
             </p>
 
             <div class="hero-actions">
@@ -66,49 +70,23 @@
               </a>
             </div>
 
+            <p class="hero-note">
+              Built for preparation before the visit, not diagnosis, treatment
+              advice, or triage.
+            </p>
+
             <ul class="hero-chips" aria-label="Product trust points">
+              <li>Structured intake</li>
               <li>Doctor-friendly summary</li>
-              <li>Private by default</li>
               <li>No diagnosis</li>
               <li>Optional AI with consent</li>
             </ul>
           </div>
 
-          <div
-            class="hero-visual reveal"
-            role="img"
-            aria-label="Mockup showing a guided intake flow beside a doctor-friendly summary preview"
-          >
+          <div class="hero-visual reveal">
             <div class="mockup-shell">
-              <div class="intake-panel">
-                <div class="panel-topline">
-                  <span class="status-dot" aria-hidden="true"></span>
-                  <span>Before your visit</span>
-                </div>
-                <h2>Guided intake</h2>
-                <p>
-                  Capture what matters while you still have time to think.
-                </p>
-                <div class="intake-group">
-                  <span class="group-label">Visit reason</span>
-                  <div class="input-chip wide">Persistent fatigue and headaches</div>
-                </div>
-                <div class="intake-group">
-                  <span class="group-label">Symptom details</span>
-                  <div class="chip-row">
-                    <span class="input-chip">Started 3 weeks ago</span>
-                    <span class="input-chip">Afternoons worse</span>
-                    <span class="input-chip">Sleep feels unrestful</span>
-                  </div>
-                </div>
-                <div class="intake-group">
-                  <span class="group-label">Relevant history</span>
-                  <div class="chip-row">
-                    <span class="input-chip">Recent move</span>
-                    <span class="input-chip">Higher stress</span>
-                    <span class="input-chip">Iron deficiency in past</span>
-                  </div>
-                </div>
+              <div class="hero-photo-tags" aria-hidden="true">
+                <span class="hero-photo-badge">Before the visit</span>
               </div>
 
               <article class="summary-card">
@@ -117,26 +95,31 @@
                     <p class="summary-kicker">Doctor-friendly summary</p>
                     <h2>Quick clinical review</h2>
                   </div>
-                  <span class="summary-badge">Ready to print</span>
+                  <span class="summary-badge">Ready for review</span>
                 </div>
 
                 <div class="summary-grid">
                   <section>
                     <h3>Visit reason</h3>
-                    <p>Fatigue and frequent headaches affecting workdays.</p>
+                    <p>Fatigue and frequent headaches.</p>
                   </section>
                   <section>
                     <h3>Timeline</h3>
-                    <p>Symptoms present for about three weeks, more noticeable later in the day.</p>
+                    <p>About three weeks. Worse later in the day.</p>
                   </section>
                   <section>
-                    <h3>Relevant context</h3>
-                    <p>Recent move, more stress, history of iron deficiency, sleep feels unrefreshing.</p>
+                    <h3>Context</h3>
+                    <p>Recent move, more stress, past iron deficiency.</p>
                   </section>
                   <section>
-                    <h3>Questions to discuss</h3>
-                    <p>What should be reviewed first, and what details matter most for this visit?</p>
+                    <h3>Visit focus</h3>
+                    <p>What should be reviewed first?</p>
                   </section>
+                </div>
+
+                <div class="summary-footer">
+                  <span>Prepared before the visit</span>
+                  <span>Easy to print or export</span>
                 </div>
               </article>
             </div>
@@ -146,14 +129,27 @@
 
       <section class="trust-strip section">
         <div class="container">
-          <ul class="trust-items reveal" aria-label="Safety boundaries">
-            <li>Private by default</li>
-            <li>Local-first</li>
-            <li>No diagnosis</li>
-            <li>No treatment recommendations</li>
-            <li>No triage advice</li>
-            <li>Optional AI with explicit consent</li>
-          </ul>
+          <div class="trust-panel reveal">
+            <p class="trust-label">Clear product boundaries</p>
+            <ul class="trust-items" aria-label="Safety boundaries">
+              <li>
+                <span class="trust-title">Doctor-friendly summary</span>
+                <span class="trust-note">Built for quick review before the visit.</span>
+              </li>
+              <li>
+                <span class="trust-title">Private by default</span>
+                <span class="trust-note">Local-first workflow focused on your device.</span>
+              </li>
+              <li>
+                <span class="trust-title">No diagnosis</span>
+                <span class="trust-note">No treatment recommendations or triage advice.</span>
+              </li>
+              <li>
+                <span class="trust-title">Optional AI</span>
+                <span class="trust-note">Only used with explicit consent.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -278,35 +274,39 @@
           </div>
 
           <article class="showcase-card reveal">
-            <div class="showcase-header">
-              <div>
-                <p class="summary-kicker">Structured summary</p>
-                <h3>Primary care visit preview</h3>
-              </div>
-              <span class="summary-badge">Doctor-friendly</span>
-            </div>
+            <img
+              class="showcase-photo"
+              src="assets/doctor-summary.jpg"
+              alt="Clinician writing notes during a consultation review"
+            />
 
-            <div class="showcase-sections">
-              <section>
-                <h4>Main concern</h4>
-                <p>Fatigue, headaches, and lower concentration over the last three weeks.</p>
-              </section>
-              <section>
-                <h4>Pattern</h4>
-                <p>Symptoms are mild in the morning and more noticeable by afternoon. Rest has not resolved them.</p>
-              </section>
-              <section>
-                <h4>Relevant history</h4>
-                <p>Prior iron deficiency. Higher recent stress after a move. No recent medication changes.</p>
-              </section>
-              <section>
-                <h4>Current context</h4>
-                <p>Sleep feels unrestful. Workdays are harder to get through. Wants to avoid forgetting key details.</p>
-              </section>
-              <section>
-                <h4>Questions for the visit</h4>
-                <p>What details matter most right now, and what should be reviewed first during the appointment?</p>
-              </section>
+            <div class="showcase-summary-card">
+              <div class="showcase-header">
+                <div>
+                  <p class="summary-kicker">Structured summary</p>
+                  <h3>Primary care visit preview</h3>
+                </div>
+                <span class="summary-badge">Doctor-friendly</span>
+              </div>
+
+              <div class="showcase-sections">
+                <section>
+                  <h4>Main concern</h4>
+                  <p>Fatigue, headaches, and lower concentration for three weeks.</p>
+                </section>
+                <section>
+                  <h4>Pattern</h4>
+                  <p>Milder in the morning, more noticeable by afternoon. Rest has not helped.</p>
+                </section>
+                <section>
+                  <h4>Relevant history</h4>
+                  <p>Prior iron deficiency. Higher recent stress after a move.</p>
+                </section>
+                <section>
+                  <h4>Current context</h4>
+                  <p>Sleep feels unrestful, and workdays have become harder to get through.</p>
+                </section>
+              </div>
             </div>
           </article>
         </div>
