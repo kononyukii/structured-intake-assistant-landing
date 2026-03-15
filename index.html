@@ -14,6 +14,76 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-document" viewBox="0 0 24 24">
+          <path d="M7 3.75h7l4 4V20.25H7z" />
+          <path d="M14 3.75v4h4" />
+          <path d="M9.5 11.25h5" />
+          <path d="M9.5 14.75h5" />
+          <path d="M9.5 18.25h3.5" />
+        </symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24">
+          <path d="M12 3.5l6.5 2.75v5.5c0 4.2-2.7 7.85-6.5 8.75-3.8-.9-6.5-4.55-6.5-8.75v-5.5z" />
+          <path d="M9.75 11.75l1.6 1.6 3.15-3.35" />
+        </symbol>
+        <symbol id="icon-device" viewBox="0 0 24 24">
+          <rect x="4" y="5.5" width="16" height="10.5" rx="2" />
+          <path d="M8 19h8" />
+          <path d="M10 16v3" />
+          <path d="M14 16v3" />
+        </symbol>
+        <symbol id="icon-slash-circle" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="8.25" />
+          <path d="M8.25 15.75L15.75 8.25" />
+        </symbol>
+        <symbol id="icon-spark" viewBox="0 0 24 24">
+          <path d="M12 4.5l1.55 4.45L18 10.5l-4.45 1.55L12 16.5l-1.55-4.45L6 10.5l4.45-1.55z" />
+          <path d="M18.25 4.75v3" />
+          <path d="M19.75 6.25h-3" />
+          <path d="M5.5 16.5v3" />
+          <path d="M7 18h-3" />
+        </symbol>
+        <symbol id="icon-list" viewBox="0 0 24 24">
+          <path d="M9.5 6.75h8" />
+          <path d="M9.5 12h8" />
+          <path d="M9.5 17.25h8" />
+          <circle cx="6.25" cy="6.75" r="1" />
+          <circle cx="6.25" cy="12" r="1" />
+          <circle cx="6.25" cy="17.25" r="1" />
+        </symbol>
+        <symbol id="icon-timeline" viewBox="0 0 24 24">
+          <path d="M5 18.25h14" />
+          <path d="M7 18.25V10.5" />
+          <path d="M12 18.25V6.5" />
+          <path d="M17 18.25v-4.75" />
+          <circle cx="7" cy="9.5" r="1.25" />
+          <circle cx="12" cy="5.5" r="1.25" />
+          <circle cx="17" cy="12.5" r="1.25" />
+        </symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24">
+          <path d="M8 7V4.5h8V7" />
+          <path d="M8 17h8v2.5H8z" />
+          <path d="M6.5 9.25h11A2.5 2.5 0 0 1 20 11.75v3A2.25 2.25 0 0 1 17.75 17H16" />
+          <path d="M8 17H6.25A2.25 2.25 0 0 1 4 14.75v-3a2.5 2.5 0 0 1 2.5-2.5z" />
+          <path d="M16 13.25h.01" />
+        </symbol>
+        <symbol id="icon-handoff" viewBox="0 0 24 24">
+          <path d="M4.75 8.5h9" />
+          <path d="M10.75 5.5l3 3-3 3" />
+          <path d="M19.25 15.5h-9" />
+          <path d="M13.25 12.5l-3 3 3 3" />
+        </symbol>
+        <symbol id="icon-branch" viewBox="0 0 24 24">
+          <circle cx="7" cy="6.5" r="2" />
+          <circle cx="17" cy="6.5" r="2" />
+          <circle cx="17" cy="17.5" r="2" />
+          <path d="M9 6.5h6" />
+          <path d="M17 8.5v7" />
+          <path d="M9 6.5v9a2 2 0 0 0 2 2h4" />
+        </symbol>
+      </defs>
+    </svg>
 
     <header class="site-header">
       <div class="container header-inner">
@@ -83,47 +153,69 @@
             </ul>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="mockup-shell">
-              <div class="hero-photo-tags" aria-hidden="true">
-                <span class="hero-photo-badge">Before the visit</span>
-              </div>
-
-              <article class="summary-card">
-                <div class="summary-header">
-                  <div>
-                    <p class="summary-kicker">Doctor-friendly summary</p>
-                    <h2>Quick clinical review</h2>
-                  </div>
-                  <span class="summary-badge">Ready for review</span>
-                </div>
-
-                <div class="summary-grid">
-                  <section>
-                    <h3>Visit reason</h3>
-                    <p>Fatigue and frequent headaches.</p>
-                  </section>
-                  <section>
-                    <h3>Timeline</h3>
-                    <p>About three weeks. Worse later in the day.</p>
-                  </section>
-                  <section>
-                    <h3>Context</h3>
-                    <p>Recent move, more stress, past iron deficiency.</p>
-                  </section>
-                  <section>
-                    <h3>Visit focus</h3>
-                    <p>What should be reviewed first?</p>
-                  </section>
-                </div>
-
-                <div class="summary-footer">
-                  <span>Prepared before the visit</span>
-                  <span>Easy to print or export</span>
-                </div>
-              </article>
+          <article
+            class="summary-artifact summary-artifact-hero reveal"
+            aria-label="Representative doctor-friendly summary preview"
+          >
+            <div class="artifact-topbar">
+              <p class="artifact-label">Representative summary preview</p>
+              <span class="artifact-state">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-document"></use>
+                </svg>
+                Doctor-friendly output
+              </span>
             </div>
-          </div>
+
+            <div class="artifact-heading">
+              <div>
+                <p class="summary-kicker">Primary care visit summary</p>
+                <h2>Prepared before the appointment</h2>
+              </div>
+              <div class="artifact-meta">
+                <span>Review time: quick scan</span>
+                <span>Format: print or export</span>
+              </div>
+            </div>
+
+            <div class="artifact-sections">
+              <section class="artifact-section artifact-section-wide">
+                <h3>Visit reason / chief concern</h3>
+                <p>Fatigue, frequent headaches, and lower concentration over the last three weeks.</p>
+              </section>
+              <section class="artifact-section">
+                <h3>Symptom timeline</h3>
+                <p>Started after a recent move. Headaches are more noticeable late in the day.</p>
+              </section>
+              <section class="artifact-section">
+                <h3>Relevant context</h3>
+                <p>Past iron deficiency, higher recent stress, and sleep has felt less restorative.</p>
+              </section>
+              <section class="artifact-section">
+                <h3>Questions for the visit</h3>
+                <p>What should be reviewed first, and what background information is most useful to bring?</p>
+              </section>
+              <section class="artifact-section">
+                <h3>Visit preparation notes</h3>
+                <p>Bring medication list and any recent lab dates if available.</p>
+              </section>
+            </div>
+
+            <div class="artifact-footer">
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-handoff"></use>
+                </svg>
+                Prepared before the visit
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-print"></use>
+                </svg>
+                Ready to print or export
+              </span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -133,18 +225,38 @@
             <p class="trust-label">Clear product boundaries</p>
             <ul class="trust-items" aria-label="Safety boundaries">
               <li>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-document"></use>
+                  </svg>
+                </span>
                 <span class="trust-title">Doctor-friendly summary</span>
                 <span class="trust-note">Built for quick review before the visit.</span>
               </li>
               <li>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-shield"></use>
+                  </svg>
+                </span>
                 <span class="trust-title">Private by default</span>
                 <span class="trust-note">Local-first workflow focused on your device.</span>
               </li>
               <li>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-slash-circle"></use>
+                  </svg>
+                </span>
                 <span class="trust-title">No diagnosis</span>
                 <span class="trust-note">No treatment recommendations or triage advice.</span>
               </li>
               <li>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-spark"></use>
+                  </svg>
+                </span>
                 <span class="trust-title">Optional AI</span>
                 <span class="trust-note">Only used with explicit consent.</span>
               </li>
@@ -196,19 +308,31 @@
 
           <div class="value-grid">
             <article class="feature-card reveal">
-              <span class="feature-index">01</span>
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-list"></use>
+                </svg>
+              </span>
               <h3>Guided intake</h3>
               <p>Prompts help you capture what brought you in without starting from a blank page.</p>
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-index">02</span>
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-timeline"></use>
+                </svg>
+              </span>
               <h3>Organized context</h3>
               <p>Symptoms, timing, history, and questions stay grouped so the story is easier to follow.</p>
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-index">03</span>
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-document"></use>
+                </svg>
+              </span>
               <h3>Doctor-friendly output</h3>
               <p>A structured summary is easier to scan than a stressed, fragmented explanation.</p>
             </article>
@@ -229,25 +353,53 @@
 
           <div class="steps-grid">
             <article class="step-card reveal">
-              <span class="step-number">1</span>
+              <div class="step-meta">
+                <span class="step-number">1</span>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-list"></use>
+                  </svg>
+                </span>
+              </div>
               <h3>Describe what brings you in</h3>
               <p>Start with the main concern in plain language.</p>
             </article>
 
             <article class="step-card reveal">
-              <span class="step-number">2</span>
+              <div class="step-meta">
+                <span class="step-number">2</span>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-timeline"></use>
+                  </svg>
+                </span>
+              </div>
               <h3>Add symptom details and relevant history</h3>
               <p>Capture timing, severity, context, medications, and anything else worth remembering.</p>
             </article>
 
             <article class="step-card reveal">
-              <span class="step-number">3</span>
+              <div class="step-meta">
+                <span class="step-number">3</span>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-document"></use>
+                  </svg>
+                </span>
+              </div>
               <h3>Review a structured summary</h3>
               <p>See the story organized into a format built for quick review.</p>
             </article>
 
             <article class="step-card reveal">
-              <span class="step-number">4</span>
+              <div class="step-meta">
+                <span class="step-number">4</span>
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-print"></use>
+                  </svg>
+                </span>
+              </div>
               <h3>Print or export it for your visit</h3>
               <p>Bring a cleaner handoff into the appointment instead of piecing it together under pressure.</p>
             </article>
@@ -273,39 +425,96 @@
             </ul>
           </div>
 
-          <article class="showcase-card reveal">
-            <img
-              class="showcase-photo"
-              src="assets/doctor-summary.jpg"
-              alt="Clinician writing notes during a consultation review"
-            />
-
-            <div class="showcase-summary-card">
-              <div class="showcase-header">
-                <div>
-                  <p class="summary-kicker">Structured summary</p>
-                  <h3>Primary care visit preview</h3>
-                </div>
-                <span class="summary-badge">Doctor-friendly</span>
+          <article class="artifact-panel reveal">
+            <div class="artifact-panel-header">
+              <div>
+                <p class="artifact-label">Example structured summary</p>
+                <h3>Designed to read like a visit-ready handoff</h3>
               </div>
+              <span class="summary-badge">Printable preview</span>
+            </div>
 
-              <div class="showcase-sections">
-                <section>
-                  <h4>Main concern</h4>
-                  <p>Fatigue, headaches, and lower concentration for three weeks.</p>
-                </section>
-                <section>
-                  <h4>Pattern</h4>
-                  <p>Milder in the morning, more noticeable by afternoon. Rest has not helped.</p>
-                </section>
-                <section>
-                  <h4>Relevant history</h4>
-                  <p>Prior iron deficiency. Higher recent stress after a move.</p>
-                </section>
-                <section>
-                  <h4>Current context</h4>
-                  <p>Sleep feels unrestful, and workdays have become harder to get through.</p>
-                </section>
+            <div class="artifact-panel-layout">
+              <aside class="artifact-rail" aria-label="Structured workflow">
+                <p class="artifact-rail-label">Structured workflow</p>
+                <ul class="artifact-flow">
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-list"></use>
+                    </svg>
+                    Symptoms
+                  </li>
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-timeline"></use>
+                    </svg>
+                    Context
+                  </li>
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-document"></use>
+                    </svg>
+                    Structured summary
+                  </li>
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-handoff"></use>
+                    </svg>
+                    Visit handoff
+                  </li>
+                </ul>
+                <p class="artifact-rail-note">Illustrative flow only, not a finished app UI.</p>
+              </aside>
+
+              <div class="summary-artifact summary-artifact-showcase">
+                <div class="artifact-heading">
+                  <div>
+                    <p class="summary-kicker">Doctor-friendly summary</p>
+                    <h3>Primary care visit preview</h3>
+                  </div>
+                  <div class="artifact-meta">
+                    <span>Preview for review</span>
+                    <span>Easy to scan</span>
+                  </div>
+                </div>
+
+                <div class="artifact-sections">
+                  <section class="artifact-section artifact-section-wide">
+                    <h4>Visit reason / chief concern</h4>
+                    <p>Fatigue, headaches, and lower concentration for three weeks.</p>
+                  </section>
+                  <section class="artifact-section">
+                    <h4>Symptom timeline</h4>
+                    <p>Milder in the morning, more noticeable by afternoon. Rest has not helped.</p>
+                  </section>
+                  <section class="artifact-section">
+                    <h4>Relevant history</h4>
+                    <p>Prior iron deficiency. Higher recent stress after a move.</p>
+                  </section>
+                  <section class="artifact-section">
+                    <h4>Questions for the visit</h4>
+                    <p>What would be most useful to review first, and are there details I should bring?</p>
+                  </section>
+                  <section class="artifact-section">
+                    <h4>Preparation notes</h4>
+                    <p>Bring medication list, recent bloodwork dates, and a short headache timing note.</p>
+                  </section>
+                </div>
+
+                <div class="artifact-footer">
+                  <span>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-print"></use>
+                    </svg>
+                    Printable or exportable
+                  </span>
+                  <span>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-handoff"></use>
+                    </svg>
+                    Ready for visit handoff
+                  </span>
+                </div>
               </div>
             </div>
           </article>
@@ -326,31 +535,61 @@
 
           <div class="safety-grid">
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-shield"></use>
+                </svg>
+              </span>
               <h3>Private by default</h3>
               <p>Local-first design keeps the primary workflow focused on your device and your visit.</p>
             </article>
 
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-device"></use>
+                </svg>
+              </span>
               <h3>No account required for the local-first flow</h3>
               <p>The core preparation experience is framed around direct use, not a signup funnel.</p>
             </article>
 
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-slash-circle"></use>
+                </svg>
+              </span>
               <h3>No diagnosis or treatment recommendations</h3>
               <p>This stays focused on preparation before a visit, not medical judgment or treatment advice.</p>
             </article>
 
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-slash-circle"></use>
+                </svg>
+              </span>
               <h3>No triage or urgency advice</h3>
               <p>The product does not decide how urgent a situation is or what care path to choose.</p>
             </article>
 
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-spark"></use>
+                </svg>
+              </span>
               <h3>Optional AI only with explicit consent</h3>
               <p>Any AI assistance is secondary, optional, and never the default assumption.</p>
             </article>
 
             <article class="safety-card reveal">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-handoff"></use>
+                </svg>
+              </span>
               <h3>Built for a clearer handoff</h3>
               <p>The goal is to organize what matters before the appointment so the visit can start more clearly.</p>
             </article>
@@ -403,15 +642,30 @@
 
           <div class="status-panel reveal">
             <div class="status-row">
-              <span class="status-title">Project stage</span>
+              <span class="status-label">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-document"></use>
+                </svg>
+                <span class="status-title">Project stage</span>
+              </span>
               <span class="status-value">Pre-release foundation</span>
             </div>
             <div class="status-row">
-              <span class="status-title">Approach</span>
+              <span class="status-label">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-device"></use>
+                </svg>
+                <span class="status-title">Approach</span>
+              </span>
               <span class="status-value">Privacy-first, local-first</span>
             </div>
             <div class="status-row">
-              <span class="status-title">Source</span>
+              <span class="status-label">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-branch"></use>
+                </svg>
+                <span class="status-title">Source</span>
+              </span>
               <a
                 class="status-link"
                 href="https://github.com/kononyukii/structured-intake-assistant-landing"
@@ -422,7 +676,12 @@
               </a>
             </div>
             <div class="status-row">
-              <span class="status-title">Focus</span>
+              <span class="status-label">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-handoff"></use>
+                </svg>
+                <span class="status-title">Focus</span>
+              </span>
               <span class="status-value">Doctor-friendly summary before the visit</span>
             </div>
           </div>
@@ -432,22 +691,40 @@
       <section class="section final-cta" id="final-cta">
         <div class="container reveal">
           <div class="cta-panel">
-            <p class="eyebrow">Final CTA</p>
-            <h2>Come to the visit with a clearer story already organized.</h2>
-            <p>
-              Structured Intake Assistant is about better preparation before a
-              primary care visit: a private, local-first way to build a
-              doctor-friendly summary without crossing into diagnosis or
-              treatment advice.
-            </p>
-            <a
-              class="button"
-              href="https://github.com/kononyukii/structured-intake-assistant-landing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View on GitHub
-            </a>
+            <div class="cta-panel-intro">
+              <p class="eyebrow">Final CTA</p>
+              <span class="cta-kicker">Open source / privacy-first / local-first</span>
+            </div>
+
+            <div class="cta-panel-layout">
+              <div class="cta-panel-copy">
+                <h2>Come to the visit with a clearer story already organized.</h2>
+              </div>
+
+              <div class="cta-panel-side">
+                <p>
+                  Structured Intake Assistant is about better preparation before a
+                  primary care visit: a private, local-first way to build a
+                  doctor-friendly summary without crossing into diagnosis or
+                  treatment advice.
+                </p>
+
+                <ul class="cta-points" aria-label="Final CTA trust points">
+                  <li>Doctor-friendly summary before the visit</li>
+                  <li>No diagnosis, treatment, or triage advice</li>
+                  <li>Optional AI only with explicit consent</li>
+                </ul>
+
+                <a
+                  class="button"
+                  href="https://github.com/kononyukii/structured-intake-assistant-landing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
