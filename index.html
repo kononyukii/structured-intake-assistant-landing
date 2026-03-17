@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Structured Intake Assistant</title>
+    <title>Structured Intake Assistant | Prepare a doctor-friendly summary before your visit</title>
     <meta
       name="description"
       content="Structured intake for primary care that helps patients prepare a clear, doctor-friendly summary before a visit."
     />
+    <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#0c5b5f" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -103,7 +104,7 @@
           class="button button-small button-ghost"
           href="https://github.com/kononyukii/structured-intake-assistant-landing"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           View on GitHub
         </a>
@@ -131,7 +132,7 @@
                 class="button"
                 href="https://github.com/kononyukii/structured-intake-assistant-landing"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 View on GitHub
               </a>
@@ -153,10 +154,7 @@
             </ul>
           </div>
 
-          <article
-            class="summary-artifact summary-artifact-hero reveal"
-            aria-label="Representative doctor-friendly summary preview"
-          >
+          <article class="summary-artifact summary-artifact-hero reveal" aria-hidden="true">
             <div class="artifact-topbar">
               <p class="artifact-label">Representative summary preview</p>
               <span class="artifact-state">
@@ -457,11 +455,15 @@
             </div>
           </div>
 
-          <article class="artifact-panel reveal">
+          <article
+            class="artifact-panel reveal"
+            aria-labelledby="summary-preview-title"
+            aria-describedby="summary-preview-description"
+          >
             <div class="artifact-panel-header">
               <div>
                 <p class="artifact-label">Representative summary preview</p>
-                <h3>Example doctor-friendly output</h3>
+                <h3 id="summary-preview-title">Example doctor-friendly output</h3>
               </div>
               <span class="summary-badge">
                 <svg class="icon" aria-hidden="true">
@@ -470,6 +472,11 @@
                 Print or export
               </span>
             </div>
+            <p class="sr-only" id="summary-preview-description">
+              Representative summary preview showing a visit reason, timeline,
+              relevant context, and questions grouped into a doctor-friendly
+              format before the appointment.
+            </p>
 
             <div class="artifact-panel-layout">
               <aside class="artifact-rail" aria-label="Why the summary is useful in a visit">
@@ -512,7 +519,7 @@
                 <p class="artifact-rail-note">Representative preview only, not a finished medical record or live product screen.</p>
               </aside>
 
-              <div class="summary-artifact summary-artifact-showcase">
+              <div class="summary-artifact summary-artifact-showcase" aria-hidden="true">
                 <div class="artifact-heading">
                   <div>
                     <p class="summary-kicker">Doctor-friendly summary</p>
@@ -600,6 +607,66 @@
           </div>
 
           <div class="safety-layout">
+            <article class="safety-card safety-card-group reveal">
+              <div class="safety-card-header">
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-device"></use>
+                  </svg>
+                </span>
+                <div>
+                  <p class="group-label">Privacy posture</p>
+                  <h3>Private by default, local-first by design</h3>
+                </div>
+              </div>
+              <ul class="safety-list" aria-label="Privacy posture details">
+                <li>
+                  <strong>Local-first workflow</strong>
+                  <span>The primary experience stays focused on your device and your visit preparation.</span>
+                </li>
+                <li>
+                  <strong>No account required</strong>
+                  <span>The core preparation flow is designed around direct use, not a signup funnel.</span>
+                </li>
+                <li>
+                  <strong>Open-source posture</strong>
+                  <span>The product direction and trust boundaries are transparent and reviewable.</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="safety-card safety-card-group reveal">
+              <div class="safety-card-header">
+                <span class="card-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-slash-circle"></use>
+                  </svg>
+                </span>
+                <div>
+                  <p class="group-label">Safety boundaries</p>
+                  <h3>Clear about what the product does not do</h3>
+                </div>
+              </div>
+              <ul class="safety-list" aria-label="Safety boundaries details">
+                <li>
+                  <strong>No diagnosis</strong>
+                  <span>It does not interpret symptoms as diseases or likely conditions.</span>
+                </li>
+                <li>
+                  <strong>No treatment recommendations</strong>
+                  <span>It does not tell you what medication, test, or next step to pursue.</span>
+                </li>
+                <li>
+                  <strong>No triage or urgency advice</strong>
+                  <span>It does not decide how urgent something is or where you should go.</span>
+                </li>
+                <li>
+                  <strong>Optional AI with explicit consent</strong>
+                  <span>Any AI assistance stays secondary and only happens if you choose it.</span>
+                </li>
+              </ul>
+            </article>
+
             <article class="safety-overview reveal">
               <div class="safety-card-header">
                 <span class="card-icon">
@@ -630,73 +697,11 @@
                 class="safety-link"
                 href="https://github.com/kononyukii/structured-intake-assistant-landing"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 View on GitHub
               </a>
             </article>
-
-            <div class="safety-groups">
-              <article class="safety-card safety-card-group reveal">
-                <div class="safety-card-header">
-                  <span class="card-icon">
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#icon-device"></use>
-                    </svg>
-                  </span>
-                  <div>
-                    <p class="group-label">Privacy posture</p>
-                    <h3>Private by default, local-first by design</h3>
-                  </div>
-                </div>
-                <ul class="safety-list" aria-label="Privacy posture details">
-                  <li>
-                    <strong>Local-first workflow</strong>
-                    <span>The primary experience stays focused on your device and your visit preparation.</span>
-                  </li>
-                  <li>
-                    <strong>No account required</strong>
-                    <span>The core preparation flow is designed around direct use, not a signup funnel.</span>
-                  </li>
-                  <li>
-                    <strong>Open-source posture</strong>
-                    <span>The product direction and trust boundaries are transparent and reviewable.</span>
-                  </li>
-                </ul>
-              </article>
-
-              <article class="safety-card safety-card-group reveal">
-                <div class="safety-card-header">
-                  <span class="card-icon">
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#icon-slash-circle"></use>
-                    </svg>
-                  </span>
-                  <div>
-                    <p class="group-label">Safety boundaries</p>
-                    <h3>Clear about what the product does not do</h3>
-                  </div>
-                </div>
-                <ul class="safety-list" aria-label="Safety boundaries details">
-                  <li>
-                    <strong>No diagnosis</strong>
-                    <span>It does not interpret symptoms as diseases or likely conditions.</span>
-                  </li>
-                  <li>
-                    <strong>No treatment recommendations</strong>
-                    <span>It does not tell you what medication, test, or next step to pursue.</span>
-                  </li>
-                  <li>
-                    <strong>No triage or urgency advice</strong>
-                    <span>It does not decide how urgent something is or where you should go.</span>
-                  </li>
-                  <li>
-                    <strong>Optional AI with explicit consent</strong>
-                    <span>Any AI assistance stays secondary and only happens if you choose it.</span>
-                  </li>
-                </ul>
-              </article>
-            </div>
           </div>
         </div>
       </section>
@@ -774,7 +779,7 @@
                 class="status-link"
                 href="https://github.com/kononyukii/structured-intake-assistant-landing"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 View on GitHub
               </a>
@@ -823,7 +828,7 @@
                   class="button"
                   href="https://github.com/kononyukii/structured-intake-assistant-landing"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   View on GitHub
                 </a>
