@@ -32,15 +32,13 @@ This project is not:
 
 ## Local development
 
-No build step is required.
-
-Run a simple static server from the repository root:
+No build step is required. Start a static server from the repository root:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then open:
+Then open the landing locally:
 
 ```text
 http://localhost:4173
@@ -48,12 +46,11 @@ http://localhost:4173
 
 ## Current status
 
-This is the first functional scaffold of the landing page:
+This repository is the v1 landing experience:
 
-- content-complete single-page structure
-- responsive layout
-- lightweight motion with reduced-motion fallback
-- CSS-based placeholder product mockups until real product assets are available
+- static single-page implementation
+- responsive layout with accessibility and reduced-motion basics
+- representative summary mockups that support the product story without pretending to be a full product UI
 
 ## Primary CTA
 

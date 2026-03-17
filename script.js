@@ -1,10 +1,12 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const revealItems = document.querySelectorAll(".reveal");
+const showAll = () => revealItems.forEach((item) => item.classList.add("is-visible"));
+let observer;
 
 if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
+  showAll();
 } else {
-  const observer = new IntersectionObserver(
+  observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
@@ -22,4 +24,19 @@ if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
   );
 
   revealItems.forEach((item) => observer.observe(item));
+}
+
+const handleReducedMotionChange = (event) => {
+  if (!event.matches) {
+    return;
+  }
+
+  observer?.disconnect();
+  showAll();
+};
+
+if ("addEventListener" in prefersReducedMotion) {
+  prefersReducedMotion.addEventListener("change", handleReducedMotionChange);
+} else if ("addListener" in prefersReducedMotion) {
+  prefersReducedMotion.addListener(handleReducedMotionChange);
 }
